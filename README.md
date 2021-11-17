@@ -11,6 +11,12 @@ Requirments:
   * gcc
   * python (and python-dev)
 
+## Installing
+ - `apt-get install cmake`
+ - `virtualenv -p python test`
+ - `source test/bin/activate'
+ - `pip install "pybind11[global]"
+
 To build you can do
 
 ```
@@ -31,15 +37,3 @@ or directly from CMake run
 ```
 make test
 ```
-
-## Run in Docker
-
-For ease of use I have a docker container based on Ubuntu 18.04 with all requirements installed.
-
-To run this container you can do 
-
-```
-docker run -it -v `pwd`:/data/code matrim/pybind-example /bin/bash
-```
-
-Then `cd /data/code` and build the example as per the instructions above.
