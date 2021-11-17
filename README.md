@@ -14,8 +14,8 @@ Requirments:
 ## Installing
  - `apt-get install cmake`
  - `virtualenv -p python test`
- - `source test/bin/activate'
- - `pip install "pybind11[global]"
+ - `source test/bin/activate`
+ - `pip install "pybind11[global]"`
 
 To build you can do
 
